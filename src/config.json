@@ -1,0 +1,15 @@
+{
+  "31337": {
+    "tickets": {
+      "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+    },
+    "exploreURL": "#"
+  },
+
+  "80001": {
+    "tickets": {
+      "address": "0x20Ee1661b579FFcd2235C1E4e0211E4810ca2f56"
+    },
+    "exploreURL": "https://mumbai.polygonscan.com/"
+  }
+}
