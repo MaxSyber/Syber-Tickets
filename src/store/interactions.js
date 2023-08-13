@@ -37,7 +37,7 @@ const tickets = new ethers.Contract(address, TICKETS_ABI, provider)
 	try {
 		const totalSupply = await tickets.totalSupply()
 		const ticketsData = [] 
-		const ticketMaster = '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266' 
+		const ticketMaster = '0x01179B07ca486eb9c165A4e5f9Eb02dfC48dBB89' 
 
 		for (let i = 0; i < totalSupply; i++) {
 			const tokenId = i
@@ -70,7 +70,7 @@ export const subscribeToEvents = (tickets, dispatch) => {
 }
 
 export const loadTicketsRemaining = async (provider, tickets, dispatch) => {
-	const TicketsRemaining = await tickets.balanceOf('0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266')
+	const TicketsRemaining = await tickets.balanceOf('0x01179B07ca486eb9c165A4e5f9Eb02dfC48dBB89')
 	TicketsRemaining.push({ TicketsRemaining })
  }
 
